@@ -20,4 +20,4 @@ async def handle_start(msg: types.Message):
     )
 
     await use_case.execute(req)
-    await msg.answer(f"Привет, {msg.from_user.id}!")
+    await msg.answer(f"Привет, {msg.from_user.username}!")
